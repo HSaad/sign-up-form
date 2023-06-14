@@ -17,7 +17,8 @@ body {
 .left-side {
     flex: 1;
     height: 100vh;
-    background-image: url(images/background-1.jpg);
+    background-image: linear-gradient(to right, transparent, #151515 90%), url(images/background-1.jpg);
+    /* background-image: url(images/background-1.jpg); */
     background-position: center;
 }
 
@@ -32,6 +33,7 @@ body {
 
 .text {
     font-size: 1.25rem;
+    padding: 30px;
     /* margin: 120px 0; */
 }
 
@@ -92,4 +94,11 @@ button:hover {
 
 a {
     color: #368F8B;
+}
+
+form {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
 }
