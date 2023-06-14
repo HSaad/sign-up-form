@@ -26,17 +26,18 @@ body {
     padding: 40px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: space-evenly;
+    /* align-items: center; */
 }
 
 .text {
     font-size: 1.25rem;
-    margin: 120px 0;
+    /* margin: 120px 0; */
 }
 
 h1 {
     font-size: 2rem;
+    margin: 10px;
 }
 
 p {
@@ -45,10 +46,11 @@ p {
 
 input {
     appearance: none;
-    border: 1px solid white;
+    border: 1px solid gray;
     background-color: #151515;
     border-radius: 5px;
     padding: 5px;
+    height: 20px;
     color: white;
 }
 
@@ -57,6 +59,7 @@ input {
     justify-content: center;
     flex-wrap: wrap;
     width: 90%;
+    /* max-width: 90%; */
 }
 
 label {
@@ -67,4 +70,26 @@ label {
     text-transform: uppercase;
     margin: 10px;
     font-size: 0.85rem;
+    color: gray;
+}
+
+button {
+    border: #368F8B 3px solid;
+    color: #368F8B;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: #151515;
+    margin: 20px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    /* margin-top: 30px; */
+}
+
+button:hover {
+    color: white;
+    background-color: #246A73;
+}
+
+a {
+    color: #368F8B;
 }
