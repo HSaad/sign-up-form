@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up</title>
   <link rel="stylesheet" href="style.css">  
+  <script src="script.js" defer></script>
 </head>
 <body>
   <div class="left-side">
@@ -29,16 +30,18 @@
       </p>
       <p>You <em>know</em> you want to.</p>
     </div>
-    <form action="" method="post">
+    <form method="get" id="signup">
       <h1>Let's do this!</h1>
       <div class="form-row">
         <label for="first_name">
           First Name
-          <input type="text" name="first_name" id="first_name">
+          <input type="text" name="first_name" id="first_name" minlength="2">
+          <p class="help">First Name must be more than 2 characters</p>
         </label>
         <label for="last_name">
           Last Name
-          <input type="text" name="last_name" id="last_name">
+          <input type="text" name="last_name" id="last_name" minlength="2">
+          <p class="help">Last Name must be more than 2 characters</p>
         </label>
       </div>
       
@@ -57,11 +60,12 @@
         <label for="password">
           Password
           <input type="password" name="password" id="password">
+          <p class="help">Passwords do not match</p>
         </label>
         
         <label for="password_confirm">
           Confirm Password
-          <input type="password" name="password" id="password_confirm">
+          <input class="error" type="password" name="password" id="password_confirm" >
         </label>
       </div>
       

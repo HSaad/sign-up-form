@@ -130,3 +130,30 @@ svg {
 .logo p {
     display: inline-block;
 }
+
+input:focus {
+    outline: none;
+    border: 1px solid var(--secondary-color);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.invalid label, .invalid input {
+    color: #c00;
+    border-color: #c00;
+  }
+
+/* .error {
+    outline: none;
+    border: 2px solid maroon;
+} */
+
+.help {
+    display: none;
+    font-size: 0.8em;
+    color: maroon;
+    margin: 0;
+}
+
+.invalid .help {
+    display: block;
+}
