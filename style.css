@@ -1,6 +1,9 @@
-/* h1 {
-    color: red; 
-} */
+:root {
+    --background-color: #151515;
+    --primary-color: #368F8B;
+    --secondary-color: #246A73;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +12,7 @@
 body {
     display: flex;
     flex-wrap: wrap;
-    background-color: #151515;
+    background-color: var(--background-color);
     height: 100vh;
     color: white;
     font-size: 16px;
@@ -20,7 +23,7 @@ body {
     flex: 1;
     /* height: 100vh; */
     /* height: 100%; */
-    background-image: linear-gradient(to right, transparent, #151515 90%), url(images/background-1.jpg);
+    background-image: linear-gradient(to right, transparent, var(--background-color) 90%), url(images/background-1.jpg);
     /* background-image: url(images/background-1.jpg); */
     background-position: center;
     display: flex;
@@ -55,7 +58,7 @@ p {
 input {
     appearance: none;
     border: 1px solid gray;
-    background-color: #151515;
+    background-color: var(--background-color);
     border-radius: 5px;
     padding: 5px;
     height: 20px;
@@ -82,11 +85,11 @@ label {
 }
 
 button {
-    border: #368F8B 3px solid;
-    color: #368F8B;
+    border: var(--primary-color) 3px solid;
+    color: var(--primary-color);
     padding: 10px 30px;
     border-radius: 5px;
-    background-color: #151515;
+    background-color: var(--background-color);
     margin: 20px 10px;
     font-size: 1rem;
     font-weight: bold;
@@ -95,7 +98,7 @@ button {
 
 button:hover {
     color: white;
-    background-color: #246A73;
+    background-color: var(--secondary-color);
 }
 
 a {
